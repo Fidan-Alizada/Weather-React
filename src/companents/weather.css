@@ -22,65 +22,61 @@ body{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   }
   
-  .title {
-    font-size: 3.5rem;
-    margin-bottom: 20px;
+
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.input {
+  margin: 10px;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+}
+
+.button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+.loading {
+  font-size: 20px;
+  margin-top: 20px;
+  animation: blinker 1.5s linear infinite;
+}
+
+.weather-info {
+  margin-top: 20px;
+  animation: fadeIn 3s ease-in-out;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
   }
-  
-  .input {
-    margin: 10px;
-    padding: 10px;
-    font-size: 16px;
-    border-radius: 5px;
-    border: none;
-    box-shadow:  0 0 20px rgba(25, 0, 124, 0.79);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
   }
-  
-  .button {
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 5px;
-    border: none;
-    background-color: #007bff;
-    color: white;
-    transition: background-color 0.3s ease;
+  to {
+    opacity: 1;
   }
-  
-  .button:hover {
-    background-color: #0056b3;
-  }
-  
-  .loading {
-    font-size: 30px;
-    margin-top: 20px;
-    animation: 33s blinker infinite;
-  }
-  
-  .weather-info {
-    margin-top: 20px;
-    animation: fadeIn 1s ease-in-out;
-  }
-  
-  @keyframes blinker {
-    50% {
-      opacity: 0;
-    }
-  }
-  
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-  
-  img {
-    margin-top: 20px;
-    width: 150px;
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
-    border-radius: 50%;
-  }
-  
+}
+
+img {
+  margin-top: 10px;
+}
