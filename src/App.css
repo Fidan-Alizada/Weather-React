@@ -1,0 +1,25 @@
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+input {
+  margin: 10px;
+  padding: 5px;
+  font-size: 16px;
+}
+
+button {
+  padding: 5px 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+div {
+  margin: 20px;
+}
+
+p {
+  font-size: 16px;
+  color: #333;
+}

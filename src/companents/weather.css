@@ -1,0 +1,86 @@
+body{
+    background-image: url(https://icon-library.com/images/weather-icon-gif/weather-icon-gif-15.jpg);
+    background-size: contain;
+}
+
+.weather-container {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    color: rgb(15, 5, 218);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .content-container {
+    background-color: rgba(255, 255, 255, 0.827);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px;
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .title {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .input {
+    margin: 10px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    box-shadow:  0 0 20px rgba(25, 0, 124, 0.79);
+  }
+  
+  .button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #0056b3;
+  }
+  
+  .loading {
+    font-size: 30px;
+    margin-top: 20px;
+    animation: 33s blinker infinite;
+  }
+  
+  .weather-info {
+    margin-top: 20px;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  @keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  img {
+    margin-top: 20px;
+    width: 150px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+  }
+  
